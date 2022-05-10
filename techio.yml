@@ -2,3 +2,5 @@ title: Simple Kotlin Template
 plan:
 - title: Kotlin Snippet
   statement: statement.md
+- title: Variáveis
+  statement: variaveis.md
