@@ -151,9 +151,9 @@ No entanto, isso só é possível quando você especifica o tipo:
 
 ```kotlin runnable
 fun main(args: Array<String>) {
-   var name: String
-   name = "John"
-   println(name)
+    var name: String
+    name = "John"
+    println(name)
 }
 ```
 
@@ -161,9 +161,9 @@ fun main(args: Array<String>) {
 
 ```kotlin runnable
 fun main(args: Array<String>) {
-   var name: String
-   name = "John"
-   println(name)
+    var name: String
+    name = "John"
+    println(name)
 }
 ```
 
@@ -172,3 +172,55 @@ fun main(args: Array<String>) {
 Como você viu nos exemplos acima, o método `println()` é frequentemente usado para exibir variáveis.
 
 Para combinar texto e uma variável, use o caractere `+`:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val name = "John"
+    println("Hello " + name)
+}
+```
+
+Você também pode usar o caractere `+` para adicionar uma variável a outra variável:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val firstName = "John "
+    val lastName = "Doe"
+    val fullName = firstName + lastName
+    println(fullName)
+}
+```
+
+Para valores numéricos, o caractere `+` funciona como um operador matemático:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val x = 5
+    val y = 6
+    println(x + y) // Print the value of x + y 
+}
+```
+
+A partir do exemplo acima, você pode notar que:
+
+- x armazena o valor 5
+- y armazena o valor 6
+- Em seguida, usamos o método `println()` para exibir o valor de x + y, que é **11**
+
+# Nomes das variáveis
+
+Uma variável pode ter um nome curto (como x e y) ou nomes mais descritivos (idade, soma, volume total).
+
+A regra geral para os nomes de variáveis em Kotlin é:
+
+- Os nomes podem conter letras, números, _ e $
+- Os nomes devem começar com uma letra
+- Os nomes também podem começar com $ e _ (mas não o usaremos neste tutorial)
+- Os nomes diferenciam maiúsculas de minúsculas ("myVar" e "myvar" são variáveis diferentes)
+- Os nomes devem começar com uma letra minúscula e não podem conter espaços em branco
+- Palavras reservadas (como as palavras-chave do Kotlin, como `var` ou `String`) não podem ser usadas como nomes
+
+### Variáveis camelCase
+Você pode notar que usamos **"firstName"** e **"lastName"** como nomes de variáveis nos exemplos acima, em vez de "firstname" e "lastname". 
+Isso é chamado de "camelCase" e é considerado uma boa prática, 
+pois facilita a leitura quando você tem um nome de variável com palavras diferentes, por exemplo, "myFavoriteFood", "rateActionMovies" etc.
