@@ -42,3 +42,10 @@ Existem dois tipos: `Float` e `Double`.
 
 ***OBS: Se você não especificar o tipo de uma variável numérica, ela geralmente é retornada como `Int` para números inteiros e `Double` para números de ponto flutuante.***
 
+# Tipos inteiros
+
+### Byte
+
+O tipo de dados `Byte` pode armazenar números inteiros de -128 a 127. 
+Isso pode ser usado em vez de `Int` ou outros tipos inteiros para economizar memória quando você tiver certeza de que o valor estará entre -128 e 127:
+
