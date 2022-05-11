@@ -11,7 +11,7 @@ val variableName = value
 
 ### Exemplo
 ```kotlin runnable
-fun main() {
+fun main(String[] args) {
   var name = "John"
   val birthyear = 1975
   
