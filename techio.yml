@@ -2,5 +2,5 @@ title: Simple Kotlin Template
 plan:
 - title: Introdução
   statement: statement.md
-- title: Variáveis
+- title: Variáveis e constantes
   statement: variaveis.md
