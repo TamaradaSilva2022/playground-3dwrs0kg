@@ -167,3 +167,8 @@ fun main(args: Array<String>) {
 }
 ```
 
+# Exibir variáveis
+
+Como você viu nos exemplos acima, o método `println()` é frequentemente usado para exibir variáveis.
+
+Para combinar texto e uma variável, use o caractere `+`:
