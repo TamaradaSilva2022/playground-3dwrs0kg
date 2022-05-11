@@ -49,3 +49,21 @@ Existem dois tipos: `Float` e `Double`.
 O tipo de dados `Byte` pode armazenar números inteiros de -128 a 127. 
 Isso pode ser usado em vez de `Int` ou outros tipos inteiros para economizar memória quando você tiver certeza de que o valor estará entre -128 e 127:
 
+```kotlin runnable
+fun main(args: Array<String>) {
+    val myNum: Byte = 100
+    println(myNum)
+}
+```
+
+# Short
+
+O tipo de dados `Short` pode armazenar números inteiros de -32768 a 32767:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val myNum: Short = 5000
+    println(myNum)
+}
+```
+
