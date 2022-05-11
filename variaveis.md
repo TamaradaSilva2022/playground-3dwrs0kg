@@ -12,7 +12,7 @@ val variableName = value
 ### Exemplo
 ```kotlin runnable
 
-fun main() {
+fun main(args: Array<String>) {
   var name = "John"
   val birthyear = 1975
   
