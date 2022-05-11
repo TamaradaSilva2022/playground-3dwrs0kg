@@ -4,3 +4,5 @@ plan:
   statement: statement.md
 - title: Variáveis e constantes
   statement: variaveis.md
+- title: Tipos de dados
+  statement: tiposDeDados.md
