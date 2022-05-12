@@ -275,10 +275,9 @@ Para converter um tipo de dados numérico para outro tipo, você deve usar uma d
 Exemplo:
 
 ```kotlin runnable
-fun main(args: Array<String>) {
+fun main(args: Array<String>){
     val x: Int = 5
     val y: Long = x.toLong()
-    println(y) 
+    println(y)
+}
 ```
-
-
