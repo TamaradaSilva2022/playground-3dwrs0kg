@@ -132,3 +132,11 @@ fun main(args: Array<String>) {
 }
 ```
 
+#### ***Quando usar Float ou Double?***
+
+***A precisão de um valor de ponto flutuante indica quantos dígitos o valor pode ter após o ponto decimal (a vírgula).*** 
+***A precisão do `Float` é de apenas seis ou sete dígitos decimais, enquanto as variáveis `Double` têm uma precisão de cerca de 15 dígitos.*** 
+***Portanto, é mais seguro usar `Double` para a maioria dos cálculos.***
+
+***Observe também que você deve terminar o valor de um tipo `Float` com um "F".***
+
