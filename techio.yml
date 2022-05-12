@@ -6,3 +6,5 @@ plan:
   statement: variaveis.md
 - title: Tipos de dados
   statement: tiposDeDados.md
+- title: Operadores
+  statement: operadores.md
