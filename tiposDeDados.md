@@ -156,3 +156,16 @@ fun main(args: Array<String>) {
 
 }
 ```
+
+# Booleans
+O tipo de dados `Boolean` (ou booleano) só pode assumir os valores `true` (verdadeiro) ou `false` (falso).
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val isKotlinFun: Boolean = true
+    val isOnionTasty: Boolean = false
+    println(isKotlinFun)   // Outputs true
+    println(isOnionTasty)   // Outputs false 
+}
+```
+
