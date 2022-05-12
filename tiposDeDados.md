@@ -132,6 +132,7 @@ fun main(args: Array<String>) {
 }
 ```
 
+
 ###### ***Quando usar Float ou Double?***
 
 ***A precisão de um valor de ponto flutuante indica quantos dígitos o valor pode ter após o ponto decimal (a vírgula).*** 
@@ -140,3 +141,18 @@ fun main(args: Array<String>) {
 
 ***Observe também que você deve terminar o valor de um tipo `Float` com um "F".***
 
+
+## Números científicos
+Um número de ponto flutuante também pode ser um número científico com um "e" ou "E" para indicar a potência de 10.
+
+Exemplo:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val myNum1: Float = 35E3F
+    val myNum2: Double = 12E4
+    println(myNum1)
+    println(myNum2)
+
+}
+```
