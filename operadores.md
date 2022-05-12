@@ -1,8 +1,9 @@
 # Operadores
 
-Exemplo   | Valor do exemplo
---------- | ------
-Exemplo 1 | R$ 10
-Exemplo 2 | R$ 8
-Exemplo 3 | R$ 7
-Exemplo 4 | R$ 8
+Os operadores são usados para realizar operações em variáveis e valores.
+
+O valor é chamado de operando, enquanto a operação (a ser realizada entre os dois operandos) é definida por um operador:
+
+Operando | Operador | Operando
+-------- | -------- | --------
+   100   |    +     |    50
