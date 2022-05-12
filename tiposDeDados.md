@@ -99,3 +99,36 @@ fun main(args: Array<String>) {
 }
 ```
 
+### Diferença entre Int e Long
+
+Um número inteiro é um `Int` desde que seja até 2147483647. Se for além disso, esse inteiro é definido como `Long`.
+
+```kotlin
+val myNum1 = 2147483647  // Int
+val myNum2 = 2147483648  // Long
+```
+
+## Tipos de ponto flutuante
+
+Os pontos flutuantes representam números com um decimal, como 9,99 ou 3,14515.
+
+Os tipos de dados `Float` e `Double` podem armazenar números fracionários.
+
+Exemplo de Float:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val myNum: Float = 5.75F
+    println(myNum)
+}
+```
+
+Exemplo de Double:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val myNum: Double = 19.99
+    println(myNum)
+}
+```
+
