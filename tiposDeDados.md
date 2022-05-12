@@ -110,7 +110,7 @@ val myNum2 = 2147483648  // Long
 
 ## Tipos de ponto flutuante
 
-Os pontos flutuantes representam números com um decimal, como 9,99 ou 3,14515.
+O tipo de dados Ponto Flutuante representa números com um decimal, como 9,99 ou 3,14515.
 
 Os tipos de dados `Float` e `Double` podem armazenar números fracionários.
 
@@ -158,7 +158,14 @@ fun main(args: Array<String>) {
 ```
 
 # Booleans
-O tipo de dados `Boolean` (ou booleano) só pode assumir os valores `true` (verdadeiro) ou `false` (falso).
+
+Muitas vezes, na programação, você precisará de um tipo de dados que só pode ter um de dois valores, como:
+
+- SIM / NÃO
+- LIGADO / DESLIGADO
+- VERDADEIRO / FALSO
+
+Para isso, o Kotlin possui um tipo de dado chamado `Boolean`, que pode assumir os valores  `true` (verdadeiro) ou `false` (falso).
 
 Exemplo:
 
@@ -171,7 +178,40 @@ fun main(args: Array<String>) {
 }
 ```
 
-Os valores booleanos são usados principalmente para testes condicionais, sobre os quais você aprenderá mais em um capítulo posterior.
+## Expressões Booleanas
+
+Uma expressão booleana retorna um valor booleano: `true` ou `false`.
+
+Você pode usar um operador de comparação, como o operador maior que (>), menor que (<), igual (==), etc, para descobrir se uma expressão (ou uma variável) é verdadeira.
+
+Exemplo:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val x = 10
+    val y = 9
+    println(x > y) // Retorna true (verdadeiro), porque 10 é maior que 9
+}
+```
+
+Ou ainda mais fácil:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    println(10 > 9) // Retorna true (verdadeiro), porque 10 é maior que 9
+}
+```
+
+Mais um exemplo:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val x = 15;
+    println(x == 10); // Retorna false (falso), porque o valor de x é diferente de 10
+}
+```
+
+***O valor booleano de uma expressão é a base para todas as comparações e condições Kotlin.***
 
 # Characters
 
@@ -199,4 +239,45 @@ fun main(args: Array<String>) {
 
 # Strings
 
-The String data type is used to store a sequence of characters (text). String values must be surrounded by double quotes:
+O tipo de dados `String` é usado para armazenar uma sequência de caracteres (texto). O valor de uma string devem estar entre **aspas duplas**.
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val myText: String = "Hello World"
+    println(myText)
+```
+
+Você aprenderá mais sobre strings no capítulo específico de `Strings`.
+
+# Arrays
+
+Arrays são usados para armazenar vários valores em uma única variável, em vez de declarar variáveis separadas para cada valor.
+
+Você aprenderá mais sobre arrays no capítulo Arrays.
+
+# Conversão de tipo
+
+A conversão de tipo é quando você converte o valor de um tipo de dados para outro tipo.
+
+Em Kotlin, a conversão de tipo numérico é diferente de Java. 
+Por exemplo, não é possível converter um tipo `Int` em um tipo `Long` com o seguinte código:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val x: Int = 5
+    val y: Long = x
+    println(y) // Error: Type mismatch 
+```
+
+Para converter um tipo de dados numérico para outro tipo, você deve usar uma das seguintes funções: 
+`toByte()`, `toShort()`, `toInt()`, `toLong()`, `toFloat()`, `toDouble()` ou `toChar()`.
+
+Exemplo:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val x: Int = 5
+    val y: Long = x.toLong()
+    println(y) 
+```
+
