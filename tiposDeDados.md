@@ -160,6 +160,8 @@ fun main(args: Array<String>) {
 # Booleans
 O tipo de dados `Boolean` (ou booleano) só pode assumir os valores `true` (verdadeiro) ou `false` (falso).
 
+Exemplo:
+
 ```kotlin runnable
 fun main(args: Array<String>) {
     val isKotlinFun: Boolean = true
@@ -169,3 +171,32 @@ fun main(args: Array<String>) {
 }
 ```
 
+Os valores booleanos são usados principalmente para testes condicionais, sobre os quais você aprenderá mais em um capítulo posterior.
+
+# Characters
+
+O tipo de dados `Char` é usado para armazenar um **único** caractere. Um valor char deve estar entre **aspas simples**, como 'A' ou 'c'.
+
+Exemplo:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val myGrade: Char = 'B'
+    println(myGrade)
+}
+```
+
+Ao contrário do Java, você não pode usar valores ASCII para exibir determinados caracteres. 
+O valor 66 geraria um "B" em Java, mas geraria um erro em Kotlin.
+
+Exemplo:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val myLetter: Char = 66
+    println(myLetter) // Error
+```
+
+# Strings
+
+The String data type is used to store a sequence of characters (text). String values must be surrounded by double quotes:
