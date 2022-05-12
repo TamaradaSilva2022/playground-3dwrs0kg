@@ -32,7 +32,7 @@ Os tipos de dados são divididos em diferentes grupos:
 
 # Numbers
 
-Os tipos de números são divididos em dois grupos:
+Os tipos de numbers (os números) são divididos em dois grupos:
 
 Os **tipos inteiros** armazenam números inteiros, positivos ou negativos (como 123 ou -456), sem decimais. 
 Os tipos válidos são `Byte`, `Short`, `Int` e `Long`.
@@ -42,12 +42,14 @@ Existem dois tipos: `Float` e `Double`.
 
 ***OBS: Se você não especificar o tipo de uma variável numérica, ela geralmente é retornada como `Int` para números inteiros e `Double` para números de ponto flutuante.***
 
-# Tipos inteiros
+## Tipos inteiros
 
 ### Byte
 
 O tipo de dados `Byte` pode armazenar números inteiros de -128 a 127. 
-Isso pode ser usado em vez de `Int` ou outros tipos inteiros para economizar memória quando você tiver certeza de que o valor estará entre -128 e 127:
+Isso pode ser usado em vez de `Int` ou outros tipos inteiros para economizar memória quando você tiver certeza de que o valor estará entre -128 e 127.
+
+Exemplo: 
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -56,13 +58,43 @@ fun main(args: Array<String>) {
 }
 ```
 
-# Short
+### Short
 
-O tipo de dados `Short` pode armazenar números inteiros de -32768 a 32767:
+O tipo de dados `Short` pode armazenar números inteiros de -32768 a 32767.
+
+Exemplo: 
 
 ```kotlin runnable
 fun main(args: Array<String>) {
     val myNum: Short = 5000
+    println(myNum)
+}
+```
+
+### Int
+
+O tipo de dados `Int` pode armazenar números inteiros de -2147483648 a 2147483647.
+
+Exemplo:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val myNum: Int = 100000
+    println(myNum)
+}
+```
+
+### Long
+
+O tipo de dados `Long` pode armazenar números inteiros de -9223372036854775807 a 9223372036854775807. 
+Isso é usado quando `Int` não é grande o suficiente para armazenar o valor. 
+Opcionalmente, você pode terminar o valor com um "L".
+
+Exemplo:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val myNum: Long = 15000000000L
     println(myNum)
 }
 ```
