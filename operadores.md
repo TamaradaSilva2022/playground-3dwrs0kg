@@ -87,3 +87,28 @@ Operador | Exemplo | É o mesmo que
     /=   |  x /= 3 |   x = x / 3
     %=   |  x %= 3 |   x = x % 3
 
+# Operadores de comparação
+
+Os operadores de comparação são usados para comparar dois valores e retornam um valor booleano: `true` (verdadeiro) ou `false` falso.
+
+Exemplo: 
+
+```kotlin runnable
+fun main(args: Array<String>) {  
+    var x = 5
+    var y = 3
+    println(x == y) // retorna false porque 5 é diferente de 3
+}
+```
+
+A tabela abaixo lista todos os operadores de comparação:
+
+Operador | Nome             | Exemplo
+:-------:| :--------------: | :-------:
+    ==   | Igual a          | x == y
+    !=   | Diferente de     | x != y
+    >    | Maior que        | x > y
+    <    | Menor que        | x < y
+    >=   | Maior ou igual a | x >= y
+    <=   | Menor ou igual a | x <= y
+
