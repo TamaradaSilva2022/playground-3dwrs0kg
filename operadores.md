@@ -50,3 +50,40 @@ Operador | Nome          | Descrição                  | Exemplo
     *    | Multiplicação | Multiplica dois valores    | x * y 
     /    | Divisão       | Divide um valor de outro   | x / y
     %    | Módulo        | Retorna o resto da divisão | x % y
+    ++   | Incremento    | Aumenta o valor em 1       | ++x
+    --   | Diminuir      | Diminui o valor em 1       | --x
+
+# Operadores de atribuição
+
+Os operadores de atribuição são usados para atribuir valores a variáveis.
+
+No exemplo abaixo, usamos o **operador de atribuição** (`=`) para atribuir o valor 10 a uma variável chamada **x**:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    var x = 10
+    println(x) 
+```
+
+O operador de atribuição de adição (`+=`) adiciona um valor a uma variável:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    var x = 10
+    println(x) 
+
+    x += 5
+    println(x) 
+```
+
+A tabela abaixo lista todos os operadores de atribuição:
+
+Operador | Exemplo | É o mesmo que 
+:-------:| :-----: | :-----------: 
+    =    |  x = 5  |   x = 5     
+    +=   |  x += 3 |   x = x + 3
+    -=   |  x -= 3 |   x = x - 3
+    *=   |  x *= 3 |   x = x * 3
+    /=   |  x /= 3 |   x = x / 3
+    %=   |  x %= 3 |   x = x % 3
+
