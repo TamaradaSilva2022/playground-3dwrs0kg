@@ -287,7 +287,43 @@ fun main(args: Array<String>) {
     println(txt[2]) // third element (l)
 ```
 
-***[0] é o primeiro elemento. [1] é o segundo elemento, [2] é o terceiro elemento, etc.***
+***Assim, [0] é o primeiro elemento. [1] é o segundo elemento, [2] é o terceiro elemento, etc.***
+
+### Comprimento de uma String
+
+Uma String em Kotlin é um objeto que contém propriedades e funções que podem realizar certas operações em strings, escrevendo um caractere de ponto (`.`) após a variável de string específica. Por exemplo, o comprimento de uma string pode ser encontrado com a propriedade `length`, como mostrado no exemplo a seguir:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    println("O comprimento da String txt é: " + txt.length)
+```
+
+# Funções de String
+
+Existem muitas funções de String disponíveis, por exemplo, `toUpperCase()` e `toLowerCase()`.
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    var txt = "Hello World"
+    println(txt.toUpperCase())   // Outputs "HELLO WORLD"
+    println(txt.toLowerCase())   // Outputs "hello world"
+```
+
+Algumas delas são retratadas abaixo.
+
+- ***Comparando Strings***
+
+A função `compareTo(string)` compara duas strings e retorna 0 se ambas forem iguais:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    var txt1 = "Hello World"
+    var txt2 = "Hello World"
+    println(txt1.compareTo(txt2))  // Outputs 0 (they are equal)
+```
+
+
 
 
 
