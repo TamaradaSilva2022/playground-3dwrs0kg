@@ -287,7 +287,7 @@ fun main(args: Array<String>) {
     println(txt[2]) // third element (l)
 ```
 
-*** [0] é o primeiro elemento. [1] é o segundo elemento, [2] é o terceiro elemento, etc.***
+***[0] é o primeiro elemento. [1] é o segundo elemento, [2] é o terceiro elemento, etc.***
 
 
 
