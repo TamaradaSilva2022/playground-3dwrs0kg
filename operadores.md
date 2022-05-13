@@ -129,7 +129,7 @@ A tabela abaixo lista todos os operadores lógicos:
 
 Operador | Nome       | Descrição                                                        | Exemplo
 :-------:| :--------: | :--------------------------------------------------------------: | :--------------:
-    &&   | E lógico   | Retorna verdadeiro se ambas as declarações forem verdadeiras     | x < 5 &&  x < 10
-    ||   | OU lógico  | Retorna verdadeiro se uma das afirmações for verdadeira          | x < 5 || x < 4
-    !    | NÃO lógico | Inverte o resultado, retorna falso se o resultado for verdadeiro | 
+   `&&`  | E lógico   | Retorna verdadeiro se ambas as declarações forem verdadeiras     | `x < 5 &&  x < 10`
+   `||`  | OU lógico  | Retorna verdadeiro se uma das afirmações for verdadeira          | `x < 5 || x < 4`
+   `!`   | NÃO lógico | Inverte o resultado, retorna falso se o resultado for verdadeiro | 
 
