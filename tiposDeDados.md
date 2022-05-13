@@ -239,7 +239,15 @@ fun main(args: Array<String>) {
 
 # Strings
 
-O tipo de dados `String` é usado para armazenar uma sequência de caracteres (texto). O valor de uma string devem estar entre **aspas duplas**.
+O tipo de dados `String` Strings é usado para armazenar texto.
+Uma string contém uma coleção de caracteres entre **aspas duplas**.
+
+```kotlin
+var greeting = "Hello"
+var greeting: String = "Hello"
+```
+
+Exemplo:
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -247,7 +255,53 @@ fun main(args: Array<String>) {
     println(myText)
 ```
 
-Você aprenderá mais sobre strings no capítulo específico de `Strings`.
+***Nota: Se você deseja criar uma String sem atribuir o valor (e atribuir o valor posteriormente), deve especificar o tipo ao declarar a variável.***
+
+Exemplo (vai dar erro por não especificar o tipo ao declarar a variável):
+```kotlin runnable
+fun main(args: Array<String>) {
+    var name
+    name = "John"
+    println(name)
+```
+
+Mesmo exemplo escrito de forma correta (sem erros):
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    var name: String
+    name = "John"
+    println(name)
+```
+
+### Acessando uma string
+
+Para acessar os caracteres (elementos) de uma string, você deve consultar o **número do índice** entre **colchetes** (`[]`).
+
+Os índices de string começam com 0. No exemplo abaixo, acessamos o primeiro e o terceiro elemento em `txt`:
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    var txt = "Hello World"
+    println(txt[0]) // first element (H)
+    println(txt[2]) // third element (l)
+```
+
+*** [0] é o primeiro elemento. [1] é o segundo elemento, [2] é o terceiro elemento, etc.***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Arrays
 
