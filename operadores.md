@@ -97,7 +97,7 @@ Exemplo:
 fun main(args: Array<String>) {  
     var x = 5
     var y = 3
-    println(x == y) // retorna false porque 5 é diferente de 3
+    println(x == y) // retorna false (falso), porque 5 é diferente de 3
 }
 ```
 
@@ -111,4 +111,25 @@ Operador | Nome             | Exemplo
     <    | Menor que        | x < y
     >=   | Maior ou igual a | x >= y
     <=   | Menor ou igual a | x <= y
+
+# Operadores lógicos
+
+Os operadores lógicos são usados para determinar a lógica entre variáveis ou valores.
+
+Exemplo (operador lógico &&):
+
+```kotlin runnable
+fun main(args: Array<String>) {  
+  var x = 5
+  println(x > 3 && x < 10) // retorna true (verdadeiro), porque 5 é maior que 3 E 5 menor que 10
+}
+```
+
+A tabela abaixo lista todos os operadores lógicos:
+
+Operador | Nome       | Descrição                                                        | Exemplo
+:-------:| :--------: | :--------------------------------------------------------------: | :--------------:
+    &&   | E lógico   | Retorna verdadeiro se ambas as declarações forem verdadeiras     | x < 5 &&  x < 10
+    ||   | OU lógico  | Retorna verdadeiro se uma das afirmações for verdadeira          | x < 5 || x < 4
+    !    | NÃO lógico | Inverte o resultado, retorna falso se o resultado for verdadeiro | 
 
