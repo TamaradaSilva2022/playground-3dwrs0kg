@@ -8,3 +8,5 @@ plan:
   statement: tiposDeDados.md
 - title: Operadores
   statement: operadores.md
+- title: Condicionais
+  statement: condicionais.md
