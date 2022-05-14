@@ -1,3 +1,13 @@
+<style>
+red { color: red }
+yellow { color: yellow }
+</style>
+
+<red> red color markdown text</red>
+<yellow> red color markdown text</yellow>
+
+
+
 # Tipos de dados
 
 Em Kotlin, o tipo de uma variável é decidido pelo seu valor:
@@ -299,7 +309,7 @@ fun main(args: Array<String>) {
     println("O comprimento da String txt é: " + txt.length)
 ```
 
-# Funções de String
+### Funções de String
 
 Existem muitas funções de String disponíveis, por exemplo, `toUpperCase()` e `toLowerCase()`.
 
@@ -320,12 +330,23 @@ A função `compareTo(string)` compara duas strings e retorna 0 se ambas forem i
 fun main(args: Array<String>) {
     var txt1 = "Hello World"
     var txt2 = "Hello World"
-    println(txt1.compareTo(txt2))  // Outputs 0 (they are equal)
+    println(txt1.compareTo(txt2))  // Mostra 0 (eles são iguais)
 ```
 
+- ***Encontrando uma string dentro de uma string***
 
+A função ``indexOf()`` retorna o **índice** (a posição) da primeira ocorrência de um texto especificado em uma string (incluindo espaços em branco).
 
+Exemplo:
 
+```kotlin runnable
+fun main(args: Array<String>) {
+    var txt = "Please locate where 'locate' occurs!"
+    println(txt.indexOf("locate"))  // Mostra 7
+```
+
+***Lembre-se que o Kotlin conta as posições a partir do zero.
+0 é a primeira posição em uma string, 1 é a segunda, 2 é a terceira, etc.***
 
 
 
