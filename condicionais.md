@@ -18,4 +18,26 @@ Assim, Kotlin tem as seguintes condicionais:
 - Use `else if` para especificar uma nova condição a ser testada, se a primeira condição for falsa
 - Use `when` para especificar muitos blocos alternativos de código a serem executados
 
-***Nota: Ao contrário de Java, if..else pode ser usado como uma instrução ou como uma expressão (para atribuir um valor a uma variável) em Kotlin. Veja um exemplo no final da página para entender melhor.***
+# if
+
+Use `if` para especificar um bloco de código a ser executado se uma condição for `true` (verdadeira).
+
+Sintaxe:
+
+```kotlin
+if (condição) {
+  // bloco de código a ser executado se a condição for verdadeira
+}
+```
+
+***Observe que `if` está em letras minúsculas. Letras maiúsculas (If ou IF) gerarão um erro.***
+
+Exemplo:
+
+```kotlin runnable
+fun main(args: Args<String>){
+    if (20 > 18) {
+    println("20 é maior que 18")
+}
+}
+```
