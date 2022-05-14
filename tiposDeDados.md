@@ -215,7 +215,8 @@ fun main(args: Array<String>) {
 
 # Characters
 
-O tipo de dados `Char` é usado para armazenar um **único** caractere. Um valor char deve estar entre **aspas simples**, como 'A' ou 'c'.
+O tipo de dados `Char` é usado para armazenar um **único** caractere. 
+Um valor char deve estar entre **aspas simples**, como 'A' ou 'c'.
 
 Exemplo:
 
@@ -225,9 +226,8 @@ fun main(args: Array<String>) {
     println(myGrade)
 }
 ```
-
-Ao contrário do Java, você não pode usar valores ASCII para exibir determinados caracteres. 
-O valor 66 geraria um "B" em Java, mas geraria um erro em Kotlin.
+Em Kotlin, você não pode usar valores ASCII para exibir determinados caracteres. 
+O valor 66 geraria um "B" em Java, por exemplo, mas geraria um erro em Kotlin.
 
 Exemplo:
 
@@ -235,11 +235,12 @@ Exemplo:
 fun main(args: Array<String>) {
     val myLetter: Char = 66
     println(myLetter) // Error
+}
 ```
 
 # Strings
 
-O tipo de dados `String` Strings é usado para armazenar texto.
+O tipo de dados `String` é usado para armazenar texto.
 Uma string contém uma coleção de caracteres entre **aspas duplas**.
 
 ```kotlin
@@ -253,6 +254,7 @@ Exemplo:
 fun main(args: Array<String>) {
     val myText: String = "Hello World"
     println(myText)
+}
 ```
 
 ***Nota: Se você deseja criar uma String sem atribuir o valor (e atribuir o valor posteriormente), deve especificar o tipo ao declarar a variável.***
@@ -263,6 +265,7 @@ fun main(args: Array<String>) {
     var name
     name = "John"
     println(name)
+}
 ```
 
 Mesmo exemplo escrito de forma correta (sem erros):
@@ -272,6 +275,7 @@ fun main(args: Array<String>) {
     var name: String
     name = "John"
     println(name)
+}
 ```
 
 ### Acessando uma string
@@ -285,6 +289,7 @@ fun main(args: Array<String>) {
     var txt = "Hello World"
     println(txt[0]) // first element (H)
     println(txt[2]) // third element (l)
+}
 ```
 
 ***Assim, [0] é o primeiro elemento. [1] é o segundo elemento, [2] é o terceiro elemento, etc.***
@@ -297,6 +302,7 @@ Uma String em Kotlin é um objeto que contém propriedades e funções que podem
 fun main(args: Array<String>) {
     var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     println("O comprimento da String txt é: " + txt.length)
+}
 ```
 
 ### Funções de String
@@ -308,6 +314,7 @@ fun main(args: Array<String>) {
     var txt = "Hello World"
     println(txt.toUpperCase())   // Mostra "HELLO WORLD"
     println(txt.toLowerCase())   // Mostra "hello world"
+}
 ```
 
 Para enconntrar mais funções úteis olhe sempre a documentação da linguagem.
@@ -323,6 +330,7 @@ fun main(args: Array<String>) {
     var txt1 = "Hello World"
     var txt2 = "Hello World"
     println(txt1.compareTo(txt2))  // Mostra 0 (eles são iguais)
+}
 ```
 
 # Encontrando uma string dentro de uma string
@@ -335,6 +343,7 @@ Exemplo:
 fun main(args: Array<String>) {
     var txt = "Please locate where 'locate' occurs!"
     println(txt.indexOf("locate"))  // Mostra 7
+}
 ```
 
 ***Lembre-se que o Kotlin conta as posições a partir do zero.
@@ -352,6 +361,7 @@ fun main(args: Array<String>) {
     var txt2 = "That's great"
     println(txt1)
     println(txt2)
+}
 ```
 
 # Concatenação de Strings
@@ -366,6 +376,7 @@ fun main(args: Array<String>) {
     var firstName = "John"
     var lastName = "Doe"
     println(firstName + " " + lastName)
+}
 ```
 
 ***Observe que adicionamos um texto vazio (" ") para criar um espaço entre `firstName` e `lastName` na impressão.***
@@ -379,6 +390,7 @@ fun main(args: Array<String>) {
     var firstName = "John "
     var lastName = "Doe"
     println(firstName.plus(lastName))
+}
 ```
 
 # Expressões modelo/Interpolação
@@ -393,6 +405,7 @@ fun main(args: Array<String>) {
     var firstName = "John"
     var lastName = "Doe"
     println("My name is $firstName $lastName")
+}
 ```
 
 ***"String Templates" é um recurso popular do Kotlin, pois reduz a quantidade de código. Por exemplo, você não precisa especificar um espaço em branco entre firstName e lastName, como fizemos no exemplo de concatenação.***
@@ -415,6 +428,7 @@ fun main(args: Array<String>) {
     val x: Int = 5
     val y: Long = x
     println(y) // Error: Type mismatch 
+}
 ```
 
 Para converter um tipo de dados numérico para outro tipo, você deve usar uma das seguintes funções: 
