@@ -1,9 +1,3 @@
-<span style="color:green;font-weight:700;font-size:20px">
-    markdown color font styles
-</span>
-
-
-
 # Tipos de dados
 
 Em Kotlin, o tipo de uma variável é decidido pelo seu valor:
@@ -307,20 +301,22 @@ fun main(args: Array<String>) {
 
 ### Funções de String
 
-Existem muitas funções de String disponíveis, por exemplo, `toUpperCase()` e `toLowerCase()`.
+Existem muitas funções de String disponíveis Kotlin, por exemplo, `toUpperCase()` e `toLowerCase()`.
 
 ```kotlin runnable
 fun main(args: Array<String>) {
     var txt = "Hello World"
-    println(txt.toUpperCase())   // Outputs "HELLO WORLD"
-    println(txt.toLowerCase())   // Outputs "hello world"
+    println(txt.toUpperCase())   // Mostra "HELLO WORLD"
+    println(txt.toLowerCase())   // Mostra "hello world"
 ```
 
-Algumas delas são retratadas abaixo.
+Para enconntrar mais funções úteis olhe sempre a documentação da linguagem.
 
-- ***Comparando Strings***
+# Comparando Strings
 
-A função `compareTo(string)` compara duas strings e retorna 0 se ambas forem iguais:
+A função `compareTo(string)` compara duas strings e retorna 0 se ambas forem iguais.
+
+Exemplo: 
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -329,7 +325,7 @@ fun main(args: Array<String>) {
     println(txt1.compareTo(txt2))  // Mostra 0 (eles são iguais)
 ```
 
-- ***Encontrando uma string dentro de uma string***
+# Encontrando uma string dentro de uma string
 
 A função ``indexOf()`` retorna o **índice** (a posição) da primeira ocorrência de um texto especificado em uma string (incluindo espaços em branco).
 
@@ -344,17 +340,62 @@ fun main(args: Array<String>) {
 ***Lembre-se que o Kotlin conta as posições a partir do zero.
 0 é a primeira posição em uma string, 1 é a segunda, 2 é a terceira, etc.***
 
+# Aspas dentro de uma string
 
+Para usar aspas dentro de uma string, use aspas simples (').
 
+Exemplo:
 
+```kotlin runnable
+fun main(args: Array<String>) {
+    var txt1 = "It's alright"
+    var txt2 = "That's great"
+    println(txt1)
+    println(txt2)
+```
 
+# Concatenação de Strings
 
+O operador `+` pode ser usado entre strings para adicioná-las para formar uma nova string. 
+Isso é chamado de concatenação.
 
+Exemplo:
 
+```kotlin runnable
+fun main(args: Array<String>) {
+    var firstName = "John"
+    var lastName = "Doe"
+    println(firstName + " " + lastName)
+```
 
+***Observe que adicionamos um texto vazio (" ") para criar um espaço entre `firstName` e `lastName` na impressão.***
 
+Também é possível usar a função `plus()` para concatenar duas strings.
 
+Exemplo:
 
+```kotlin runnable
+fun main(args: Array<String>) {
+    var firstName = "John "
+    var lastName = "Doe"
+    println(firstName.plus(lastName))
+```
+
+# Expressões modelo/Interpolação
+
+Em vez de concatenação, você também pode usar expressões modelo (template strings), que é uma maneira fácil de adicionar variáveis e expressões dentro de uma string. 
+Uma expressão modelo começa com um cifrão (`$`).
+
+Exemplo: 
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    var firstName = "John"
+    var lastName = "Doe"
+    println("My name is $firstName $lastName")
+```
+
+***"String Templates" é um recurso popular do Kotlin, pois reduz a quantidade de código. Por exemplo, você não precisa especificar um espaço em branco entre firstName e lastName, como fizemos no exemplo de concatenação.***
 
 # Arrays
 
