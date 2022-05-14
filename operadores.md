@@ -16,6 +16,7 @@ Exemplo:
 fun main(args: Array<String>) {
     var x = 100 + 50
     println(x) 
+}
 ```
 
 Embora o operador `+` seja frequentemente usado para somar dois valores, como no exemplo acima, ele também pode ser usado para somar uma variável e um valor, ou uma variável e uma variável.
@@ -30,6 +31,7 @@ fun main(args: Array<String>) {
     println(sum1) 
     println(sum2) 
     println(sum3)
+}
 ```
 
 Kotlin divide os operadores nos seguintes grupos:
@@ -63,6 +65,7 @@ No exemplo abaixo, usamos o **operador de atribuição** (`=`) para atribuir o v
 fun main(args: Array<String>) {
     var x = 10
     println(x) 
+}
 ```
 
 O operador de atribuição de adição (`+=`) adiciona um valor a uma variável:
@@ -74,6 +77,7 @@ fun main(args: Array<String>) {
 
     x += 5
     println(x) 
+}
 ```
 
 A tabela abaixo lista todos os operadores de atribuição:
