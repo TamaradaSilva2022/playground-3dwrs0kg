@@ -18,4 +18,4 @@ Kotlin tem as seguintes condicionais:
 - Use `else if` para especificar uma nova condição a ser testada, se a primeira condição for falsa
 - Use `when` para especificar muitos blocos alternativos de código a serem executados
 
-***Nota: Ao contrário de Java, if..else pode ser usado como uma instrução ou como uma expressão (para atribuir um valor a uma variável) em Kotlin. Veja um exemplo no final da página para entender melhor.
+***Nota: Ao contrário de Java, if..else pode ser usado como uma instrução ou como uma expressão (para atribuir um valor a uma variável) em Kotlin. Veja um exemplo no final da página para entender melhor.***
