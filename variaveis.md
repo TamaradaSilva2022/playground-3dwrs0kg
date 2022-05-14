@@ -65,24 +65,26 @@ fun main(args: Array<String>) {
 Além das variáveis, em Kotlin também existem constantes. 
 
 Constantes são usadas para definir uma variável que tem um valor constante. 
-A palavra-chave ``const`` é usada para definir uma variável constante. 
-A palavra-chave ``const`` só pode ser usada com a palavra-chave ``val`` e não com a palavra-chave ``var``.
+A palavra-chave `const` é usada para definir uma variável constante. 
+A palavra-chave `const` só pode ser usada com a palavra-chave `val` e não com a palavra-chave `var`.
 
 ```kotlin
 const val name = "John"
 println(name) 
-````
+```
 
-Se tentarmos declarar uma constante com a palavra-chave ``var``, obteremos uma mensagem de erro erro.
+Se tentarmos declarar uma constante com a palavra-chave `var`, obteremos uma mensagem de erro erro.
 
-### Diferenças entre ``const``e ``val``
+### Diferenças entre `const` e `val`
 
-Ambas as palavras-chave ``val`` e ``const`` parecem estar fazendo o mesmo trabalho, ou seja, declarar variáveis constantes. 
-Mas há uma pequena diferença entre elas. A palavra-chave ``const`` é usada para declarar constantes de tempo de compilação, 
-enquanto a palavra-chave ``val`` pode declarar constantes em tempo de execução. Vamos entender com um exemplo:
+Ambas as palavras-chave `val` e `const` parecem estar fazendo o mesmo trabalho, ou seja, declarar variáveis constantes. 
+Mas há uma pequena diferença entre elas. A palavra-chave `const` é usada para declarar constantes de tempo de compilação, 
+enquanto a palavra-chave `val` pode declarar constantes em tempo de execução. 
+Vamos entender com um exemplo:
 
-Suponha que declaramos uma variável ``name`` e queremos atribuir a ela um valor, que será retornado por uma função ``sayHello()``. 
-Se usarmos a palavra-chave ``val``, não teremos nenhum erro:
+Suponha que declaramos uma variável `name` e queremos atribuir a ela um valor, que será retornado por uma função `sayHello()`. 
+Se usarmos a palavra-chave `val`, não teremos nenhum erro:
+
 ```kotlin runnable
 fun main(args: Array<String>) {
     val name = sayHello()
@@ -92,10 +94,10 @@ fun main(args: Array<String>) {
 fun sayHello():String{
     return "Hello"
 }
-````
+```
 
-Mas, se declararmos esta variável com a palavra-chave ``const``, 
-obteremos um erro porque o valor será atribuído a ``name`` em tempo de execução:
+Mas, se declararmos esta variável com a palavra-chave `const`, 
+obteremos um erro porque o valor será atribuído a `name` em tempo de execução:
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -106,8 +108,8 @@ fun main(args: Array<String>) {
 fun sayHello():String{
     return "Hello"
 }
-````
-Portanto, a palavra-chave ``const`` só é usada para declarar variáveis cujos valores são conhecidos em tempo de compilação.
+```
+Portanto, a palavra-chave `const` só é usada para declarar variáveis cujos valores são conhecidos em tempo de compilação.
 
 # Tipo de variável
 
