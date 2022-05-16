@@ -138,9 +138,9 @@ Exemplo:
 fun main(args: Array<String>){
     val time = 20
     val greeting = if (time < 18) {
-        "Good day."
+        "Bom dia."
     } else {
-        "Good evening."
+        "Boa noite."
     }
     println(greeting)
 }
