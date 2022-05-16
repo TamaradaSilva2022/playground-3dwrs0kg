@@ -32,7 +32,7 @@ if (condição) {
 
 ***Observe que `if` está em letras minúsculas. Letras maiúsculas (If ou IF) gerarão um erro.***
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>){
@@ -73,7 +73,7 @@ if (condição) {
 }
 ```
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>){
@@ -107,7 +107,7 @@ if (condição1) {
 }
 ```
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>){
@@ -132,7 +132,7 @@ No entanto, se a hora fosse 14, nosso programa imprimiria "Boa tarde".
 
 Em Kotlin, você também pode usar instruções `if...else` como expressões (ou seja, atribuir um valor a uma variável e devolvê-lo).
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>){
@@ -150,7 +150,7 @@ Ao usar `if` como uma expressão, você também deve incluir `else` (obrigatóri
 
 ***Observação: você pode omitir as chaves {} quando `if` tiver apenas uma instrução.***
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>){
