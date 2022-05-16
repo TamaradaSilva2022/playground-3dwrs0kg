@@ -4,14 +4,14 @@ Variáveis são contêineres para armazenar valores de dados.
 
 Para criar uma variável, use `var` ou `val` e atribua um valor a ela com o sinal de igual `=`:
 
-### Sintaxe
+**Sintaxe:**
 
 ```kotlin
 var variableName = value
 val variableName = value
 ```
 
-### Exemplo
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -149,7 +149,7 @@ fun main(args: Array<String>) {
 Você também pode declarar uma variável sem atribuir o valor, atribuindo o valor posteriormente. 
 No entanto, isso só é possível quando você especifica o tipo:
 
-- Exemplo que funciona: tipo especificado ao criar a variável
+**Exemplo que funciona: tipo especificado ao criar a variável**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -159,7 +159,7 @@ fun main(args: Array<String>) {
 }
 ```
 
-- Exemplo que não funciona: não especificou o tipo ao criar a variável
+**Exemplo que não funciona: não especificou o tipo ao criar a variável**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
