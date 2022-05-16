@@ -10,7 +10,7 @@ Operando | Operador | Operando
 
 No exemplo abaixo, os números 100 e 50 são **operandos** e o sinal `+` é um **operador**.
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -21,7 +21,7 @@ fun main(args: Array<String>) {
 
 Embora o operador `+` seja frequentemente usado para somar dois valores, como no exemplo acima, ele também pode ser usado para somar uma variável e um valor, ou uma variável e uma variável.
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -95,7 +95,7 @@ Operador | Exemplo | É o mesmo que
 
 Os operadores de comparação são usados para comparar dois valores e retornam um valor booleano: `true` (verdadeiro) ou `false` falso.
 
-Exemplo: 
+**Exemplo:** 
 
 ```kotlin runnable
 fun main(args: Array<String>) {  
@@ -120,7 +120,7 @@ Operador | Nome             | Exemplo
 
 Os operadores lógicos são usados para determinar a lógica entre variáveis ou valores.
 
-Exemplo (operador lógico &&):
+**Exemplo (operador lógico &&):**
 
 ```kotlin runnable
 fun main(args: Array<String>) {  
