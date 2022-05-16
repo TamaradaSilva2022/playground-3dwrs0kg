@@ -81,7 +81,7 @@ fun main(args: Array<String>){
 }
 ```
 
-# continue
+### continue
 
 A instrução `continue` interrompe uma iteração (no loop), se ocorrer uma condição especificada, e continua com a próxima iteração no loop.
 
