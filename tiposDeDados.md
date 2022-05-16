@@ -412,9 +412,29 @@ fun main(args: Array<String>) {
 
 # Arrays
 
-Arrays são usados para armazenar vários valores em uma única variável, em vez de declarar variáveis separadas para cada valor.
+As matrizes são usadas para armazenar vários valores em uma única variável, em vez de criar variáveis separadas para cada valor.
 
-Você aprenderá mais sobre arrays no capítulo Arrays.
+Para criar uma matriz, use a função arrayOf() e coloque os valores em uma lista separada por vírgulas dentro dela:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Conversão de tipo
 
