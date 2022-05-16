@@ -10,3 +10,5 @@ plan:
   statement: operadores.md
 - title: Condicionais
   statement: condicionais.md
+- title: Loops
+  statement: loops.md
