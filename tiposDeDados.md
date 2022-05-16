@@ -49,7 +49,7 @@ Existem dois tipos: `Float` e `Double`.
 O tipo de dados `Byte` pode armazenar números inteiros de -128 a 127. 
 Isso pode ser usado em vez de `Int` ou outros tipos inteiros para economizar memória quando você tiver certeza de que o valor estará entre -128 e 127.
 
-Exemplo: 
+**Exemplo:** 
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -62,7 +62,7 @@ fun main(args: Array<String>) {
 
 O tipo de dados `Short` pode armazenar números inteiros de -32768 a 32767.
 
-Exemplo: 
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -75,7 +75,7 @@ fun main(args: Array<String>) {
 
 O tipo de dados `Int` pode armazenar números inteiros de -2147483648 a 2147483647.
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -90,7 +90,7 @@ O tipo de dados `Long` pode armazenar números inteiros de -9223372036854775807 
 Isso é usado quando `Int` não é grande o suficiente para armazenar o valor. 
 Opcionalmente, você pode terminar o valor com um "L".
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -114,7 +114,7 @@ O tipo de dados Ponto Flutuante representa números com um decimal, como 9,99 ou
 
 Os tipos de dados `Float` e `Double` podem armazenar números fracionários.
 
-Exemplo de Float:
+**Exemplo de Float:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -123,7 +123,7 @@ fun main(args: Array<String>) {
 }
 ```
 
-Exemplo de Double:
+**Exemplo de Double:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -145,7 +145,7 @@ fun main(args: Array<String>) {
 ## Números científicos
 Um número de ponto flutuante também pode ser um número científico com um "e" ou "E" para indicar a potência de 10.
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -167,7 +167,7 @@ Muitas vezes, na programação, você precisará de um tipo de dados que só pod
 
 Para isso, o Kotlin possui um tipo de dado chamado `Boolean`, que pode assumir os valores  `true` (verdadeiro) ou `false` (falso).
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -184,7 +184,7 @@ Uma expressão booleana retorna um valor booleano: `true` ou `false`.
 
 Você pode usar um operador de comparação, como o operador maior que (>), menor que (<), igual (==), etc, para descobrir se uma expressão (ou uma variável) é verdadeira.
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -202,7 +202,7 @@ fun main(args: Array<String>) {
 }
 ```
 
-Mais um exemplo:
+**Mais um exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -218,7 +218,7 @@ fun main(args: Array<String>) {
 O tipo de dados `Char` é usado para armazenar um **único** caractere. 
 Um valor char deve estar entre **aspas simples**, como 'A' ou 'c'.
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -229,7 +229,7 @@ fun main(args: Array<String>) {
 Em Kotlin, você não pode usar valores ASCII para exibir determinados caracteres. 
 O valor 66 geraria um "B" em Java, por exemplo, mas geraria um erro em Kotlin.
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -248,7 +248,7 @@ var greeting = "Hello"
 var greeting: String = "Hello"
 ```
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -259,7 +259,7 @@ fun main(args: Array<String>) {
 
 ***Nota: Se você deseja criar uma String sem atribuir o valor (e atribuir o valor posteriormente), deve especificar o tipo ao declarar a variável.***
 
-Exemplo (vai dar erro por não especificar o tipo ao declarar a variável):
+**Exemplo (vai dar erro por não especificar o tipo ao declarar a variável):**
 ```kotlin runnable
 fun main(args: Array<String>) {
     var name
@@ -323,7 +323,7 @@ Para enconntrar mais funções úteis olhe sempre a documentação da linguagem.
 
 A função `compareTo(string)` compara duas strings e retorna 0 se ambas forem iguais.
 
-Exemplo: 
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -337,7 +337,7 @@ fun main(args: Array<String>) {
 
 A função ``indexOf()`` retorna o **índice** (a posição) da primeira ocorrência de um texto especificado em uma string (incluindo espaços em branco).
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -353,7 +353,7 @@ fun main(args: Array<String>) {
 
 Para usar aspas dentro de uma string, use aspas simples (').
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -369,7 +369,7 @@ fun main(args: Array<String>) {
 O operador `+` pode ser usado entre strings para adicioná-las para formar uma nova string. 
 Isso é chamado de concatenação.
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -383,7 +383,7 @@ fun main(args: Array<String>) {
 
 Também é possível usar a função `plus()` para concatenar duas strings.
 
-Exemplo:
+**Exemplo:**
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -398,7 +398,7 @@ fun main(args: Array<String>) {
 Em vez de concatenação, você também pode usar expressões modelo (template strings), que é uma maneira fácil de adicionar variáveis e expressões dentro de uma string. 
 Uma expressão modelo começa com um cifrão (`$`).
 
-Exemplo: 
+**Exemplo:** 
 
 ```kotlin runnable
 fun main(args: Array<String>) {
@@ -412,29 +412,97 @@ fun main(args: Array<String>) {
 
 # Arrays
 
-As matrizes são usadas para armazenar vários valores em uma única variável, em vez de criar variáveis separadas para cada valor.
+Arrays são usados para armazenar vários valores em uma única variável, em vez de criar variáveis separadas para cada valor.
 
-Para criar uma matriz, use a função arrayOf() e coloque os valores em uma lista separada por vírgulas dentro dela:
+Para criar um array, use a função `arrayOf()` e coloque os valores em uma lista separada por vírgulas dentro dela.
 
+```kotlin
+val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+```
 
+### Acesse os elementos de um array
 
+Você pode acessar um elemento do array referindo-se ao **número do índice**, entre **colchetes**.
 
+No exemplo abaixo, acessamos o valor do primeiro elemento em um array chamado `cars`:
 
+```kotlin runnable
+fun main(args: Array<String>) {
+    val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+    println(cars[0])
+}
+```
 
+***Nota: Assim como com as Strings, os índices dos Arrays começam com 0: [0] é o primeiro elemento. [1] é o segundo elemento, etc.***
 
+### Alterar um elemento de um array
 
+Para alterar o valor de um elemento específico, consulte o número do índice.
 
+**Exemplo:**
 
+```kotlin
+cars[0] = "Opel"
+```
 
+**Exemplo:**
 
+```kotlin runnable
+fun main(args: Array<String>) {
+    val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+    cars[0] = "Opel"
+    println(cars[0]) 
+}
+```
 
+### Comprimento / Tamanho de um array
 
+Para descobrir quantos elementos um array possui, use a propriedade size.
 
+**Exemplo:**
 
+```kotlin runnable
+fun main(args: Array<String>) {
+    val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+    println(cars.size) 
+}
+```
 
+### Verifique se existe um elemento no array
 
+Você pode usar o operador `in` para verificar se existe um elemento em um array.
 
+**Exemplo**
 
+```kotlin runnable
+fun main(args: Array<String>) {
+    val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+    if ("Volvo" in cars) {
+        println("It exists!")
+    } else {
+        println("It does not exist.")
+    }
+}
+```
+
+### Loop através de um array
+
+Muitas vezes, quando você trabalha com arrays, precisa percorrer todos os elementos dele.
+
+Você pode percorrer os elementos do array com o loop `for`, sobre o qual aprenderá no capítulo de loops.
+
+O exemplo a seguir imprime todos os elementos no array `cars`.
+
+**Exemplo:**
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+    for (x in cars) {
+        println(x)
+    }
+}
+```
 
 # Conversão de tipo
 
