@@ -169,8 +169,27 @@ Ele é usado para selecionar um dos muitos blocos de código a serem executados.
 
 ```kotlin runnable
 fun main(args: Array<String>){
-    val time = 20
-    val greeting = if (time < 18) "Bom dia." else "Boa tarde."
-    println(greeting)
+    val day = 4
+
+    val result = when (day) {
+        1 -> "Segunda-feira"
+        2 -> "Terça-feira"
+        3 -> "Quarta-feira"
+        4 -> "Quinta-feira"
+        5 -> "Sexta-feira"
+        6 -> "Sábado"
+        7 -> "Domingo"
+        else -> "Dia inválido"
+    }
+    println(result)
 }
 ```
+
+É assim que funciona:
+
+- A variável dentro de `when` (`day`) é avaliada uma vez
+- O valor da variável `day` é comparado com os valores de cada "ramo"
+- Cada ramo começa com um valor, seguido por uma seta (`->`) e um resultado, que é armazenado na variável `result`
+- Se houver uma correspondência, o bloco de código associado é executado
+- `else` é usado para especificar algum código a ser executado se não houver correspondência
+- No exemplo acima, o valor de `day` é 4, significando que o valor "Quinta-feira" será impresso
