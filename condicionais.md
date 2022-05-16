@@ -162,3 +162,15 @@ fun main(args: Array<String>){
 
 # When
 
+Em vez de escrever muitas expressões `if..else`, você pode usar a expressão `when`, que é muito mais fácil de ler.
+Ele é usado para selecionar um dos muitos blocos de código a serem executados.
+
+**Exemplo:** *Use o número do dia da semana para calcular o nome do dia da semana:*
+
+```kotlin runnable
+fun main(args: Array<String>){
+    val time = 20
+    val greeting = if (time < 18) "Bom dia." else "Boa tarde."
+    println(greeting)
+}
+```
