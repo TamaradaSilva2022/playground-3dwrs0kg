@@ -88,7 +88,7 @@ fun main(args: Array<String>){
 
 ### ***Explicação do exemplo***
 
-***No exemplo acima, o tempo (20) é maior que 18, então a condição é falsa, então passamos para a condição `else` e imprimimos na tela "Boa noite".*** 
+***No exemplo acima, `time` (20) é maior que 18, então a condição é falsa, então passamos para a condição `else` e imprimimos na tela "Boa noite".*** 
 ***Se a hora fosse menor que 18, o programa imprimiria "Bom dia".***
 
 # else if
@@ -102,9 +102,63 @@ if (condição1) {
    // bloco de código a ser executado se condition1 for true
 } else if (condição2) {
    // bloco de código a ser executado se a condição1 for falsa e a condição2 for verdadeira
-} senão {
+} else {
    // bloco de código a ser executado se condition1 for false e condition2 for false
 }
 ```
 
 Exemplo:
+
+```kotlin runnable
+fun main(args: Array<String>){
+    val time = 22
+    if (time < 12) {
+        println("Bom dia.")
+    } else if (time < 18) {
+        println("Boa tarde.")
+    } else {
+        println("Boa noite.")
+    }
+}
+```
+
+### ***Explicação do exemplo***
+
+No exemplo acima, `time` (22) é maior que 10, então a primeira condição é falsa. 
+A próxima condição, na instrução `else if`, também é falsa, então passamos para a condição `else`, já que condição1 e condição2 são ambas falsas, e imprimimos na tela "Boa noite".
+No entanto, se a hora fosse 14, nosso programa imprimiria "Boa tarde".
+
+# Expressões if...else
+
+Em Kotlin, você também pode usar instruções `if...else` como expressões (ou seja, atribuir um valor a uma variável e devolvê-lo).
+
+Exemplo:
+
+```kotlin runnable
+fun main(args: Array<String>){
+    val time = 20
+    val greeting = if (time < 18) {
+        "Good day."
+    } else {
+        "Good evening."
+    }
+    println(greeting)
+}
+```
+
+Ao usar `if` como uma expressão, você também deve incluir `else` (obrigatório).
+
+***Observação: você pode omitir as chaves {} quando `if` tiver apenas uma instrução.***
+
+Exemplo:
+
+```kotlin runnable
+fun main(args: Array<String>){
+    val time = 20
+    val greeting = if (time < 18) "Bom dia." else "Boa tarde."
+    println(greeting)
+}
+```
+
+# When
+
