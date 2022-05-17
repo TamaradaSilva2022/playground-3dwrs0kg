@@ -412,6 +412,10 @@ fun main(args: Array<String>) {
 
 # Arrays
 
+Arrays são usados para armazenar vários valores em uma única variável, em vez de declarar variáveis separadas para cada valor.
+
+Você aprenderá mais sobre arrays no capítulo Arrays.
+
 # Conversão de tipo
 
 A conversão de tipo é quando você converte o valor de um tipo de dados para outro tipo.
