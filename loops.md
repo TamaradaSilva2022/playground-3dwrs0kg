@@ -58,7 +58,7 @@ fun main(args: Array<String>){
 }
 ```
 
-***Novamente, não esqueça de aumentar a variável usada na condição, caso contrário o loop nunca terminará!***
+> ***Novamente, não esqueça de aumentar a variável usada na condição, caso contrário o loop nunca terminará!***
 
 # break e continue
 
@@ -146,9 +146,21 @@ Com o loop `for`, você também pode criar intervalos de valores com "`..`".
 
 ```kotlin runnable
 fun main(args: Array<String>){
-    for (chars in 'a'..'x') {
+    for (chars in 'a'..'z') {
        println(chars)
     }
+}
+```
+
+Com `..`, também é possível criar intervalos de números.
+
+**Exemplo:** 
+
+```kotlin runnable
+fun main(args: Array<String>){
+    for (nums in 5..15) {
+        println(nums)
+    } 
 }
 ```
 
