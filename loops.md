@@ -107,7 +107,7 @@ Muitas vezes, quando você trabalha com arrays, precisa percorrer todos os eleme
 
 Para percorrer os elementos do array, use o loop `for` junto com o operador `in`.
 
-**Exemplo: Imprima todos os elementos no array cars:**
+**Exemplo:** ***Imprima todos os elementos no array cars:***
 
 ```kotlin runnable
 fun main(args: Array<String>){
@@ -142,7 +142,7 @@ No Kotlin, o loop `for` é usado para percorrer arrays, intervalos e outras cois
 
 Com o loop `for`, você também pode criar intervalos de valores com "`..`".
 
-**Exemplo:** *Imprima o alfabeto inteiro:*
+**Exemplo:** ***Imprima o alfabeto inteiro:***
 
 ```kotlin runnable
 fun main(args: Array<String>){
@@ -192,6 +192,36 @@ fun main(args: Array<String>){
         println("Existe!")
     } else {
         println("Não existe.")
+    } 
+}
+```
+
+### Interromper ou continuar um intervalo
+
+Você também pode usar as palavras-chave `break` e `continue` em um loop range/`for`.
+
+**Exemplo 01:** ***Pare o loop quando `nums` for igual a 10:***
+
+```kotlin runnable
+fun main(args: Array<String>){
+    for (nums in 5..15) {
+        if (nums == 10) {
+        break
+    }
+    println(nums)
+    } 
+}
+```
+
+**Exemplo 02:** ***Pule o valor de 10 no loop e continue com a próxima iteração:***
+
+```kotlin runnable
+fun main(args: Array<String>){
+    for (nums in 5..15) {
+        if (nums == 10) {
+        continue
+    }
+    println(nums)
     } 
 }
 ```
