@@ -30,7 +30,7 @@ if (condição) {
 }
 ```
 
-***Observe que `if` está em letras minúsculas. Letras maiúsculas (If ou IF) gerarão um erro.***
+> ***Observe que `if` está em letras minúsculas. Letras maiúsculas (If ou IF) gerarão um erro.***
 
 **Exemplo:**
 
@@ -148,7 +148,7 @@ fun main(args: Array<String>){
 
 Ao usar `if` como uma expressão, você também deve incluir `else` (obrigatório).
 
-***Observação: você pode omitir as chaves {} quando `if` tiver apenas uma instrução.***
+> ***Observação: você pode omitir as chaves {} quando `if` tiver apenas uma instrução.***
 
 **Exemplo:**
 
