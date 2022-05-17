@@ -28,7 +28,7 @@ fun main(args: Array<String>){
 }
 ```
 
-***Nota: Não esqueça de aumentar a variável usada na condição, caso contrário o loop nunca terminará.***
+> ***Nota: Não esqueça de aumentar a variável usada na condição, caso contrário o loop nunca terminará.***
 
 # do...while
 
