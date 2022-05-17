@@ -176,9 +176,9 @@ Você também pode usar o operador `in` para verificar se existe um valor em um 
 fun main(args: Array<String>){
     val nums = arrayOf(2, 4, 6, 8)
     if (2 in nums) {
-        println("It exists!")
+        println("Existe!")
     } else {
-        println("It does not exist.")
+        println("Não existe.")
     }
 }
 ```
@@ -189,9 +189,9 @@ fun main(args: Array<String>){
 fun main(args: Array<String>){
     val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
     if ("Volvo" in cars) {
-        println("It exists!")
+        println("Existe!")
     } else {
-        println("It does not exist.")
+        println("Não existe.")
     } 
 }
 ```
