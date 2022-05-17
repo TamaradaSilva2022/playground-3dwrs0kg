@@ -60,42 +60,6 @@ fun main(args: Array<String>){
 
 ***Novamente, não esqueça de aumentar a variável usada na condição, caso contrário o loop nunca terminará!***
 
-# for
-
-Muitas vezes, quando você trabalha com arrays, precisa percorrer todos os elementos desse array.
-
-Para percorrer os elementos do array, use o loop `for` junto com o operador `in`.
-
-**Exemplo: Imprima todos os elementos no array cars:**
-
-```kotlin runnable
-fun main(args: Array<String>){
-    val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
-    for (x in cars) {
-        println(x)
-    }
-}
-```
-
-Você pode percorrer todos os tipos de matrizes. No exemplo acima, usamos um array de strings.
-
-No exemplo abaixo, percorremos um array de inteiros:
-
-```kotlin runnable
-fun main(args: Array<String>){
-    val nums = arrayOf(1, 5, 10, 15, 20)
-    for (x in nums) {
-        println(x)
-    }
-}
-```
-
-### Loop for tradicional
-
-Ao contrário do Java e de outras linguagens de programação, não existe um loop `for` tradicional no Kotlin.
-
-No Kotlin, o loop `for` é usado para percorrer arrays, intervalos e outras coisas que contêm um número contável de valores.
-
 # break e continue
 
 ### break
@@ -133,6 +97,57 @@ fun main(args: Array<String>){
     }
     println(i)
     i++
+    }
+}
+```
+
+# for
+
+Muitas vezes, quando você trabalha com arrays, precisa percorrer todos os elementos desse array.
+
+Para percorrer os elementos do array, use o loop `for` junto com o operador `in`.
+
+**Exemplo: Imprima todos os elementos no array cars:**
+
+```kotlin runnable
+fun main(args: Array<String>){
+    val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+    for (x in cars) {
+        println(x)
+    }
+}
+```
+
+Você pode percorrer todos os tipos de matrizes. No exemplo acima, usamos um array de strings.
+
+No exemplo abaixo, percorremos um array de inteiros:
+
+```kotlin runnable
+fun main(args: Array<String>){
+    val nums = arrayOf(1, 5, 10, 15, 20)
+    for (x in nums) {
+        println(x)
+    }
+}
+```
+
+### Loop for tradicional
+
+Ao contrário do Java e de outras linguagens de programação, não existe um loop `for` tradicional no Kotlin.
+
+No Kotlin, o loop `for` é usado para percorrer arrays, intervalos e outras coisas que contêm um número contável de valores.
+
+
+# Ranges (intervalos)
+
+Com o loop `for`, você também pode criar intervalos de valores com "`..`".
+
+**Exemplo:** *Imprima o alfabeto inteiro:*
+
+```kotlin runnable
+fun main(args: Array<String>){
+    for (chars in 'a'..'x') {
+       println(chars)
     }
 }
 ```
