@@ -76,8 +76,7 @@ fun main(args: Array<String>) {
 # Loop através de um array
 
 Muitas vezes, quando você trabalha com arrays, precisa percorrer todos os elementos dele.
-
-Você pode percorrer os elementos do array com o loop `for`, sobre o qual aprenderá no capítulo de loops.
+Para isso, você pode percorrer os elementos do array com o loop `for`.
 
 O exemplo a seguir imprime todos os elementos no array `cars`.
 
