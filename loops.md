@@ -164,3 +164,34 @@ fun main(args: Array<String>){
 }
 ```
 
+> ***Note que o primeiro e o último valor estão incluídos no intervalo.***
+
+### Verificar se existe um valor no intervalo
+
+Você também pode usar o operador `in` para verificar se existe um valor em um intervalo.
+
+**Exemplo 01:**
+
+```kotlin runnable
+fun main(args: Array<String>){
+    val nums = arrayOf(2, 4, 6, 8)
+    if (2 in nums) {
+        println("It exists!")
+    } else {
+        println("It does not exist.")
+    }
+}
+```
+
+**Exemplo 02:**
+
+```kotlin runnable
+fun main(args: Array<String>){
+    val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+    if ("Volvo" in cars) {
+        println("It exists!")
+    } else {
+        println("It does not exist.")
+    } 
+}
+```
