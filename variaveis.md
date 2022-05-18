@@ -114,7 +114,7 @@ Portanto, a palavra-chave `const` só é usada para declarar variáveis cujos va
 # Tipo de variável
 
 Ao contrário de muitas outras linguagens de programação, as variáveis em Kotlin não precisam ser declaradas com um tipo específico 
-(como "String" para texto ou "Int" para números, se você estiver familiarizado com eles).
+(como "String" para texto ou "Int" para números), isso é chamado de **inferência de tipo**.
 
 Para criar uma variável em Kotlin que deve armazenar texto e outra que deve armazenar um número, veja o exemplo a seguir:
 
