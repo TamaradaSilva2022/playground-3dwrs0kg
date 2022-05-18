@@ -19,3 +19,9 @@ Kotlin é utilizado para:
 - Kotlin é fácil de aprender, especialmente se você já conhece Java
 - Kotlin é gratuito para usar
 - Grande comunidade/suporte
+
+
+```
+Fonte:
+https://www.w3schools.com/kotlin/kotlin_intro.php
+```
