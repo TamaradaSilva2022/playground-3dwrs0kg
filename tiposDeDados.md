@@ -145,19 +145,38 @@ fun main(args: Array<String>) {
 
 Tipo  | N° de bits  | Valor mínimo                         | Valor máximo
 ----- | ----------- | ------------------------------------ | ----------
-Byte  | 8           | -128                                 | 127
-Short | 16          | -32768                               | 32767
-Int   | 32          | -2.147.483.648 (-2^{31})             | 2.147.483.647 (2^{31} - 1)
-Long  | 64          | -9.223.372.036.854.775.808 (-2^{63}) | 9.223.372.036.854.775.807 (2^{63} - 1)
+Type | Size (bits) | Significant bits | Exponent bits
+
+Decimal digits
+
+Float
+
+32
+
+24
+
+8
+
+6-7
+
+Double
+
+64
+
+53
+
+11
+
+15-16
 
 
 > ***Quando usar Float ou Double?***
-
->***A precisão de um valor de ponto flutuante indica quantos dígitos o valor pode ter após o ponto decimal (a vírgula).*** 
->***A precisão do `Float` é de apenas seis ou sete dígitos decimais, enquanto as variáveis `Double` têm uma precisão de cerca de 15 dígitos.*** 
->***Portanto, é mais seguro usar `Double` para a maioria dos cálculos.***
-
->***Observe também que você deve terminar o valor de um tipo `Float` com um "F".***
+>
+>*A precisão de um valor de ponto flutuante indica quantos dígitos o valor pode ter após o ponto decimal (a vírgula).*
+>*A precisão do `Float` é de apenas seis ou sete dígitos decimais, enquanto as variáveis `Double` têm uma precisão de cerca de 15 dígitos.* 
+>*Portanto, é mais seguro usar `Double` para a maioria dos cálculos.*
+>
+>*Observe também que você deve terminar o valor de um tipo `Float` com um "F".*
 
 
 ## Números científicos
