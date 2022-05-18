@@ -226,3 +226,9 @@ A regra geral para os nomes de variáveis em Kotlin é:
 Você pode notar que usamos **"firstName"** e **"lastName"** como nomes de variáveis nos exemplos acima, em vez de "firstname" e "lastname". 
 Isso é chamado de "camelCase" e é considerado uma boa prática, 
 pois facilita a leitura quando você tem um nome de variável com palavras diferentes, por exemplo, "myFavoriteFood", "rateActionMovies" etc.
+
+```
+Fonte:
+https://www.w3schools.com/kotlin/kotlin_variables.php
+https://www.studytonight.com/kotlin/kotlin-variables-and-constants
+```
