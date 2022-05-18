@@ -99,6 +99,22 @@ fun main(args: Array<String>) {
 }
 ```
 
+### Tabela resumo dos tipos inteiros
+
+Exemplo   | Valor do exemplo
+--------- | ------
+Exemplo 1 | R$ 10
+Exemplo 2 | R$ 8
+Exemplo 3 | R$ 7
+Exemplo 4 | R$ 8
+
+Type  | Size (bits) | Min value                             | Max value
+----- | ----------- | ------------------------------------- | ----------
+Byte  | 8           | -128                                  | 127
+Short | 16          | -32768                                | 32767
+Int   | 32          | -2.147.483.648 (-2^31)              | 2.147.483.647 (2^31 - 1)
+Long  | 64          | -9.223.372.036.854.775.808 (-2^63) | 9.223.372.036.854.775.807 (263 - 1)
+
 ### Diferença entre Int e Long
 
 Um número inteiro é um `Int` desde que seja até 2147483647. Se for além disso, esse inteiro é definido como `Long`.
@@ -442,4 +458,10 @@ fun main(args: Array<String>){
     val y: Long = x.toLong()
     println(y)
 }
+```
+
+```
+Fonte:
+https://www.w3schools.com/kotlin/kotlin_variables.php
+https://www.studytonight.com/kotlin/kotlin-variables-and-constants
 ```
