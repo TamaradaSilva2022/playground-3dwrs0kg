@@ -26,7 +26,7 @@ fun main(args: Array<String>) {
 
 # Palavras reservadas
 
-Toda linguagem de programação tem certas palavras predefinidas que carregam algum significado especial. Elas são conhecidas como palavras reservadas. 
+Toda linguagens de programação tem certas palavras predefinidas que carregam algum significado especial. Elas são conhecidas como palavras reservadas. 
 As palavras-chave **não** podem ser usadas como identificadores.
 
 Um identificador é o nome dado a uma variável, classe, função, interface etc.
