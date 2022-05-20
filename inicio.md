@@ -40,7 +40,6 @@ val name: String = "emp_name"
 As palavras reservadas Kotlin são:
 
 |   as   | break |   class   |  continue |
-|:------:|:-----:|:---------:|:---------:|
 |   do   |  else |   false   |    for    |
 |   fun  |   if  |     in    | interface |
 |   is   |  null |   object  |  package  |
