@@ -52,3 +52,4 @@ return | super | this      | throw
 true   | try   | typealias | typeof
 -------|-------|-----------|---------- 
 val    | var   | when      | while
+
