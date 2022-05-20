@@ -2,6 +2,8 @@ title: Fundamentos de Kotlin
 plan:
 - title: Introdução
   statement: statement.md
+- title: Ponto de entrada, entrada e saída
+  statement: inicio.md
 - title: Variáveis e constantes
   statement: variaveis.md
 - title: Tipos de dados
