@@ -143,31 +143,10 @@ fun main(args: Array<String>) {
 
 ### Tabela resumo dos tipos ponto flutuante
 
-Tipo  | N° de bits  | Valor mínimo                         | Valor máximo
------ | ----------- | ------------------------------------ | ----------
-Type | Size (bits) | Significant bits | Exponent bits
-
-Decimal digits
-
-Float
-
-32
-
-24
-
-8
-
-6-7
-
-Double
-
-64
-
-53
-
-11
-
-15-16
+Tipo  | N° de bits  | Bits significativos | Bits expoentes | Dígitos decimais
+----- | ----------- | ------------------- | -------------- | ----------
+Float |     32      |         24          |       8        | 6-7
+Double|     64      |         53          |       11       | 15-16
 
 
 > ***Quando usar Float ou Double?***
