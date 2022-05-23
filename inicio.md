@@ -69,10 +69,51 @@ fun main(args: Array<String>) {
 }
 ```
 
+>>**Explicando o exemplo anterior**
+>
+> ***Neste exemplo, as duas primeiras saídas são impressas usando a função `println()`. Então, elas apareceram em linhas diferentes.***
+> ***Mas as próximas duas instruções são impressas usando a função `print()`, por conta disso elas aparecerão na mesma linha.***
+
+### Obter entrada do usuário
+
+Para receber a entrada do usuário, usamos a função `readline()`. 
+Por padrão, ela receberá a entrada como uma String, que é um texto. 
+Se precisarmos usar qualquer outro tipo de entrada, como número, booleano, etc., ela precisa ser convertida para um tipo específico, o que significa especificar e converter explicitamente a entrada de String para algum outro tipo de dados (os tipos de dados da linguagem serão mostrados em capítulos posteriores).
+
+**Exemplo:**
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    println("Digite a string: ")
+    var inputString = readLine()
+    println("A entrada no formato de string é: $inputString")
+
+    println("Digite o número: ")
+    var inputNumber = Integer.valueOf(readLine())
+    println("A entrada no formato de número inteiro é: $inputNumber")
+}
+```
+
+Outra forma de converter a entrada para diferentes tipos de dados em cada caso é criando um objeto da classe `Scanner` e usá-lo para receber entrada.
+
+**Exemplo:**
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    var scanner = Scanner(System.`in`)
+    
+    println("Digite um número: ")
+    var inputNumber = scanner.nextInt()
+    println("A entrada em formato de número inteiro é: $inputNumber")
+}
+```
+
+Da mesma forma, podemos usar `nextBoolean()`, `nextFloat()`, `nextLong()` e `nextDouble()` para diferentes tipos de variáveis.
 
 ```
 Fonte:
 
+https://www.w3schools.com/kotlin/kotlin_output.php
 https://www.studytonight.com/kotlin/kotlin-keywords-and-identifiers
 https://www.studytonight.com/kotlin/kotlin-input-and-output
 
