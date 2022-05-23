@@ -16,5 +16,3 @@ plan:
   statement: loops.md
 - title: Arrays
   statement: arrays.md
-- title: Funções
-  statement: funcoes.md
