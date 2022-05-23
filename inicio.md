@@ -50,3 +50,29 @@ As palavras reservadas Kotlin são:
 
 # Entrada e saída
 
+A entrada e saída do usuário são parte essencial de qualquer programa. Eles vão ajudar na interação do usuário.
+
+### Mostrando a saída no console
+
+Para imprimir a saída na janela do console, podemos usar as funções `print()` e `println()`. 
+A função `print()` continuará adicionando a saída à mesma linha, `println()` imprimirá a saída e moverá o cursor para a próxima linha. 
+
+**Exemplo:**
+
+```kotlin runnable
+fun main(args: Array<String>) {
+    println("Hello")
+    println("World!!\n")
+
+    print("Bye, ")
+    print("World!!")
+}
+```
+
+```
+Fonte:
+
+https://www.studytonight.com/kotlin/kotlin-keywords-and-identifiers
+https://www.studytonight.com/kotlin/kotlin-input-and-output
+
+```
