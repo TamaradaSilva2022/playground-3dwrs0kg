@@ -367,7 +367,7 @@ fun main(args: Array<String>) {
 
 # Aspas dentro de uma string
 
-Para usar aspas dentro de uma string, use aspas simples (').
+Para usar aspas dentro de uma string, use aspas simples (') ou acrescente um contra-barra antes das aspas duplas (`\"`).
 
 **Exemplo:**
 
