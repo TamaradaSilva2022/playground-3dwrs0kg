@@ -18,20 +18,17 @@ Como o nome sugere, as funções definidas pelo usuário são criadas pelos usu�
 **Sintaxe**
 
 ```kotlin
-fun <nome_da_função>(<nome_do_parâmetro>: <tipo_de_dados_do_argumento>):<tipo_do_returno>{
+fun nome_da_função(nome_do_parâmetro: tipo_de_dados_do_argumento):tipo_do_returno{
     // corpo da função
 }
 ```
 
 Na sintaxe:
 
-- **<nome_da_função>**: É o nome dado à função.
-
-- **<nome_do_parâmetro>**: representa o nome do parâmetro.
-
-- **<tipo_de_dados_do_parâmetro>**: representa o tipo de dado do parâmetro.
-
-- **<tipo_do_returno>**: representa o tipo de dado do valor retornado pela função.
+- **nome_da_função**: É o nome dado à função.
+- **nome_do_parâmetro**: representa o nome do parâmetro.
+- **tipo_de_dados_do_parâmetro**: representa o tipo de dado do parâmetro.
+- **tipo_do_returno**: representa o tipo de dado do valor retornado pela função.
 
 # Chamando uma função
 
