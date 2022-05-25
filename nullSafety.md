@@ -32,35 +32,35 @@ Para permitir que uma variável também mantenha valores nulos usamos `?` após 
 
 ```kotlin runnable
 fun main() {
-    var nome:String? = null
+    var name:String? = null
 }
 ```
 
 Aqui nós deliberadamente permitimos que a variável `name` mantivesse valores nulos. Mas agora ela pode lançar uma exceção de ponteiro nulo quando tentarmos usá-la. O Kotlin também cuidará das referências anuláveis. Se tentarmos usá-lo como:
 
-
-divertido main() {
-    var nome:String? = "Ninja"
-    println(nome.comprimento) // ERRO
+```kotlin runnable
+fun main() {
+    var name:String? = "Ninja"
+    println(name.length) 
 }
+```
 
-Erro:(3, 17) Kotlin: Somente chamadas seguras (?.) ou não nulas (!!.) são permitidas em um receptor anulável do tipo String?
-
-Aqui o compilador não está nos permitindo encontrar o comprimento da String diretamente porque pode lançar uma exceção de ponteiro nulo.
+O compilador não nos permitirá encontrar o comprimento da String diretamente porque pode lançar uma exceção de ponteiro nulo.
 
 Agora, para chamar as propriedades e funções em referências anuláveis, podemos fazer o seguinte:
 
-Verifique nulo nas condições
+1. Verificação de `null` nas condições
 
-Chamadas seguras
+2. Chamadas seguras
 
-O operador Elvis
+3. O operador Elvis
 
-O !! operador
+4. O operador !!
 
-Vamos discutir esses métodos em detalhes e ver como eles nos permitem usar referências Nullable e também cuidar do NPE.
+Vamos discutir esses métodos em detalhes e ver como eles nos permitem usar referências anuláveis e também cuidar do NPE.
 
-Verificar Nulo em Condições
+# Verificação de `null` nas condições
+
 Se quisermos chamar uma função ou usar uma propriedade em uma referência anulável (como usar name.length na variável name), podemos verificar a condição nula primeiro e depois usá-la:
 
 divertido main() {
