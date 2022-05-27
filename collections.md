@@ -13,11 +13,11 @@ Os objetos dentro de uma coleção são conhecidos como elementos ou itens.
 
 Existem três tipos de coleções em Kotlin:
 
-1. List
+1. Listas
 2. Set
 3. Map
 
-A biblioteca padrão Kotlin fornece métodos para criar os objetos de list, set e map. 
+A biblioteca padrão Kotlin fornece métodos para criar os objetos de list (lista), set e map. 
 De acordo com o requisito, cada um deles pode ser uma:
 
 1. Coleção imutável (somente leitura)
