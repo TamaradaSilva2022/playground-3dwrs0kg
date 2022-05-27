@@ -18,3 +18,5 @@ plan:
   statement: arrays.md
 - title: Funções
   statement: funcoes.md
+- title: Coleções
+  statement: collections.md
