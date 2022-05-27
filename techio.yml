@@ -20,7 +20,7 @@ plan:
   statement: funcoes.md
 - title: Coleções
   statement: collections.md
-- title: Enums
+- title: Enumerações
   statement: enums.md
  - title: Funções lambda
   statement: lambda.md
