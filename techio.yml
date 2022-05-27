@@ -22,5 +22,5 @@ plan:
   statement: collections.md
 - title: Enums
   statement: enums.md
-  - title: Funções lambda
+ - title: Funções lambda
   statement: lambda.md
