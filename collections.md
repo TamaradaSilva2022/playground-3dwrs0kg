@@ -141,7 +141,7 @@ fun main(args: Array<String>) {
 }
 ```
 
-### Lista Mutável Kotlin
+### Lista Mutável
 
 As listas mutáveis são criadas usando a interface `MutableList`. A interface `MutableList` também herda a interface `Collection`. 
 As listas mutáveis são dinâmicas por natureza. Podemos adicionar ou remover elementos da lista mutável após sua declaração. 
