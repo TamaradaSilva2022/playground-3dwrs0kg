@@ -4,16 +4,16 @@ Neste capítulo, apresentaremos uma breve introdução às coleções (collectio
 O conceito de coleções não é uma novidade do Kotlin, esse conceito já está presente em muitas outras linguagens de programação. 
 A biblioteca padrão Kotlin fornece um conjunto de ferramentas para criar e gerenciar coleções.
 
-# O que são coleções?
+### O que são coleções?
 
 Uma coleção (collection) é um grupo de objetos do mesmo tipo. 
 Os objetos dentro de uma coleção são conhecidos como elementos ou itens.
 
-# Tipos de coleções
+### Tipos de coleções
 
 Existem três tipos de coleções em Kotlin:
 
-1. Listas
+1. List
 2. Set
 3. Map
 
@@ -23,7 +23,7 @@ De acordo com o requisito, cada um deles pode ser uma:
 1. Coleção imutável (somente leitura)
 2. Coleção Mutável (tanto leitura quanto escrita)
 
-# Coleção imutável
+### Coleção imutável
 
 Coleções imutáveis são herdadas da interface `Collection<T>` que não fornece funcionalidade para adicionar ou remover elementos. 
 Em coleções imutáveis, um elemento não pode ser adicionado , removido ou alterado após a declaração. 
@@ -31,7 +31,7 @@ Após definir a coleção imutável, podemos apenas ler seus elementos.
 
 A coleção imutável é simplesmente conhecida como coleção também.
 
-# Coleção Mutável
+### Coleção Mutável
 
 Como o nome sugere, as coleções mutáveis permitem operações de escrita e leitura. 
 Em coleções mutáveis podemos adicionar, remover e alterar os valores dos elementos.
