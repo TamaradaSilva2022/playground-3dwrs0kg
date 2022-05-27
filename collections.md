@@ -64,7 +64,7 @@ Vamos criar uma lista usando essas duas funções no exemplo abaixo.
 **Exemplo:**
 
 ```kotlin runnable
-fun main() {
+fun main(args: Array<String>) {
     var genericList = listOf("Ninja", 10, 1.05f, 'a')
     var specificList = listOf<String>("Ninja", "Study", "tonight")
     println("Imprimindo $genericList")
@@ -81,7 +81,7 @@ Para percorrer uma lista podemos utilizar o `for`, como no exemplo abaixo.
 **Exemplo:**
 
 ```kotlin runnable
-fun main() {
+fun main(args: Array<String>) {
     val list = listOf<String>("Ninja", "Study", "tonight", "Ninja", "Kotlin")
     // printing list
     for (element in list)
@@ -112,7 +112,7 @@ Algumas funções e propriedades importantes fornecidas na interface `List` são
 **Exemplo:**
 
 ```kotlin runnable
-fun main() {
+fun main(args: Array<String>) {
     val list = listOf<String>("Ninja", "Study", "tonight", "Ninja", "Kotlin")
     // Propriedades
     println("O tamanho da lista é: ${list.size}")
@@ -156,7 +156,7 @@ Vamos criar listas mutáveis usando estes métodos no exemplo abaixo.
 **Exemplo:**
 
 ```kotlin runnable
-fun main() {
+fun main(args: Array<String>) {
     var genericList = mutableListOf("Ninja", 10, 1.05f, 'a')
     var specificList = mutableListOf<String>("Ninja", "Study", "tonight")
     println("Imprimindo $genericList")
@@ -176,7 +176,7 @@ Todas as propriedades e métodos que estão presentes em listas imutáveis tamb�
 **Exemplo usando estes métodos:**
 
 ```kotlin runnable
-fun main() {
+fun main(args: Array<String>) {
     val list = mutableListOf<String>("Ninja", "Study", "tonight", "Ninja", "Kotlin")
     // New Functions
     list.add("Java")
@@ -214,7 +214,7 @@ A função `setOf<T>()` é usada para criar um set de tipo específico.
 **Exemplo:**
 
 ```kotlin runnable
-fun main() {
+fun main(args: Array<String>) {
     val genericSet = setOf("Hello", 1, "Bye", 'A', "Hello")
     val specificSet = setOf<String>("C++", "Maths", "English")
     println(genericSet)
@@ -229,7 +229,7 @@ Para percorrer um set podemos utilizar um `for`, como no exemplo a seguir.
 **Exemplo:**
 
 ```kotlin runnable
-fun main() {
+fun main(args: Array<String>) {
     val genericSet = setOf("Hello", 1, "Bye", 'A', "Hello")
     for (item in genericSet)
         println(item)
@@ -262,7 +262,7 @@ Funções :
 **Exemplo:**
 
 ```kotlin runnable
-fun main() {
+fun main(args: Array<String>) {
     val languages = setOf<String>("Kotlin", "C++", "C", "Java", "Angular", "Kotlin")
     val marks = setOf<Int>(95,96,94,90)
 
@@ -305,7 +305,7 @@ A função `mutableSetOf()` é usada para criar um set geral enquanto `mutableSe
 **Exemplo:**
 
 ```kotlin runnable
-fun main() {
+fun main(args: Array<String>) {
     val generalSet = mutableSetOf("Kotlin", 10, 1.0f, 'A', "Kotlin")
     val specificSet = mutableSetOf<String>("Kotlin", "C++", "C", "Java", "Angular", "Kotlin")
     println(generalSet)
@@ -322,7 +322,7 @@ Todas as propriedades e métodos que estão presentes em sets imutáveis também
 **Exemplo:**
 
 ```kotlin runnable
-fun main() {
+fun main(args: Array<String>) {
     val languages = mutableSetOf<String>("Kotlin", "C++", "C", "Java", "Kotlin")
     println(languages)
     languages.add("Angular")
@@ -356,7 +356,7 @@ O `mapOf<K, V>()` é usado para criar um mapa específico com chaves e valores d
 **Exemplo:**
 
 ```kotlin runnable
-fun main() {
+fun main(args: Array<String>) {
     val generalMap = mapOf("Rank" to 1, 1 to "Primeiro", 'A' to "Excelente")
     val specificMap = mapOf<String, Int>("Física" to 80, "Matemática" to 97, "C++" to 89)
     println(generalMap)
@@ -369,7 +369,7 @@ fun main() {
 **Exemplo:**
 
 ```kotlin runnable
-fun main() {
+fun main(args: Array<String>) {
     val generalMap = mapOf("Rank" to 1, 1 to "Primeiro", 'A' to "Excelente")
     val specificMap = mapOf<String, Int>("Física" to 80, "Matemática" to 97, "C++" to 89)
     for ((k,v) in generalMap) {
@@ -406,7 +406,7 @@ Algumas funções e propriedades importantes fornecidas na interface Map são:
 ```kotlin runnable
 package collections
 
-fun main() {
+fun main(args: Array<String>) {
     val marks = mapOf<String, Int>("Física" to 80, "Matemática" to 97, "C++" to 89, "Química" to 95)
     
     // Propriedades
@@ -442,7 +442,7 @@ A função `mutableMapOf()` é usada para criar um mapa generalizado e a `mutabl
 **Exemplo:**
 
 ```kotlin runnable
-fun main() {
+fun main(args: Array<String>) {
     val generalMap = mutableMapOf("Rank" to 1, 1 to "Primeiro", 'A' to "Excelente")
     val specificMap = mutableMapOf<String, Int>("Física" to 80, "Matemática" to 97, "C++" to 89)
     println(generalMap)
@@ -466,7 +466,7 @@ Os maps mutáveis têm algumas funções extras para suportar a natureza dinâmi
 **Exemplo:**
 
 ```kotlin runnable
-fun main() {
+fun main(args: Array<String>) {
     val marks = mutableMapOf<String, Int>("Física" to 80, "Matemática" to 97, "C++" to 89, "Química" to 95)
 
     marks.put("C++", 92)
