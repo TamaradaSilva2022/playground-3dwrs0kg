@@ -203,7 +203,7 @@ Sets (ou conjuntos) são:
 
 Em Kotlin podemos ter um set (conjunto) mutável e um set (conjunto) imutável.
 
-### Set imutável Kotlin
+### Set imutável
 
 Sets imutáveis são criados usando a interface `Set`. A interface `Set` herda a interface `Collection`.
 
