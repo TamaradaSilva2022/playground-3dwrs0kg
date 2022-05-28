@@ -31,15 +31,15 @@ Nas enums podem ter construtores primários. Como constantes em enum são instâ
 
 ```kotlin runnable
 enum class pizza(val diameter: Int){
-    SMALL(10),
-    MEDIUM(12),
-    LARGE(14)
+    PEQUENO(10),
+    MEDIO(12),
+    GRANDE(14)
 }
 
 // Vamos usar este enum na main()função:
 
 fun main(args: Array<String>) {
-    val pizzaSize = pizza.LARGE
+    val pizzaSize = pizza.GRANDE
     println("O tamanho da pizza pedida é $pizzaSize")
     println("O diâmetro da pizza GRANDE é ${pizzaSize.diameter}")
 }
@@ -55,16 +55,16 @@ Em Kotlin, temos duas funções em cada Enum por padrão. A função `values()` 
 ```kotlin runnable
 
 enum class pizza(val diameter: Int){
-    SMALL(10),
-    MEDIUM(12),
-    LARGE(14)
+    PEQUENO(10),
+    MEDIO(12),
+    GRANDE(14)
 }
 
 fun main(args: Array<String>) {
     for(pizza in pizza.values()){
         println(pizza)
     }
-    val largePizza = pizza.valueOf("LARGE")
+    val largePizza = pizza.valueOf("GRANDE")
     println("Diameter: ${largePizza.diameter}")
 }
 ```
