@@ -11,7 +11,7 @@ Uma função Lambda pode ser tratada como uma variável. Isso significa que pode
 A sintaxe da função lambda em Kotlin é:
 
 ```kotlin
-val nomeDaLambda : TipoDeDados = { argrumentos -> corpodaFunçãoLambda }
+val nomeDaLambda : TipoDeDados = { argumentos -> corpodaFunçãoLambda }
 ```
 
 Nas função lambdas:
