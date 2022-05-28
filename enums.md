@@ -1,10 +1,7 @@
 # Enum
 
-Ao desenvolver um aplicativo, pode surgir uma situação em que queremos que uma variável tenha um valor fora de um **determinado conjunto de valores permitidos**, por exemplo, se tivermos uma variável `pizzaSize`, ela deverá ter os seguintes valores: pequena, média e grande.
-
-Em Kotlin, os Enums nos ajudam a conseguir isso.
-
-Em Kotlin podemos criar uma **classe enum** com a ajuda da palavra-chave `enum`. As enums (ou enumerações) podem ter propriedades, funções, podem implementar interfaces, etc.
+Enum é um tipo de dados que consiste em um conjunto de constantes. Em Kotlin podemos criar uma **classe enum** com a ajuda da palavra-chave `enum`. 
+As enums (ou enumerações) podem ter propriedades, funções, podem implementar interfaces, etc.
 
 ### Classe Enum
 
