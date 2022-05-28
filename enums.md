@@ -19,7 +19,7 @@ enum class pizza{
 
 //Agora vamos usar este enum na main()função:
 
-fun main() {
+fun main(args: Array<String>) {
     val pizzaSize = pizza.LARGE
     println("O tamanho da pizza pedida é $pizzaSize")
 }
@@ -41,7 +41,7 @@ enum class pizza(val diameter: Int){
 
 // Vamos usar este enum na main()função:
 
-fun main() {
+fun main(args: Array<String>) {
     val pizzaSize = pizza.LARGE
     println("O tamanho da pizza pedida é $pizzaSize")
     println("O diâmetro da pizza GRANDE é ${pizzaSize.diameter}")
@@ -63,7 +63,7 @@ enum class pizza(val diameter: Int){
     LARGE(14)
 }
 
-fun main() {
+fun main(args: Array<String>) {
     for(pizza in pizza.values()){
         println(pizza)
     }
