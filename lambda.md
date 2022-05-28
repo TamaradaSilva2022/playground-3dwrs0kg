@@ -29,7 +29,7 @@ Vamos dar alguns exemplos de código.
 **Exemplo 1: Vamos começar criando um lambda simples que imprime uma string:**
 
 ```kotlin runnable
-fun main() {
+fun main(args: Array<String>) {
     // função lambda sem argumento
     val lambda = { println("Lambdas são incríveis!")}
     
@@ -47,7 +47,7 @@ No Exemplo 1, os argumentos e o tipo de retorno foram eliminados.
 **Exemplo 2: Vamos criar outro exemplo, dessa vez para encontrar a área de um retângulo:**
 
 ```kotlin runnable
-fun main() {
+fun main(args: Array<String>) {
     val area = {altura: Int, largura: Int -> altura*largura} 
 /*    
     Esta lambda é o mesmo que:
@@ -68,7 +68,7 @@ Se houver apenas um argumento presente na função lambda, ele poderá ser subst
 Vamos criar um array e imprimir os quadrados dos números nele usando `forEach`:
 
 ```kotlin runnable
-fun main() {
+fun main(args: Array<String>) {
     val array = arrayOf(10,2,3)
     
     // Forma longa
